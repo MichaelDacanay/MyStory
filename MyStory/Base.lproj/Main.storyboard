@@ -1,24 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YL7-DQ-42Q">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MyStory-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="br6-Tr-QLd" userLabel="Main Stack View">
+                                <rect key="frame" x="76.666666666666686" y="153" width="240" height="342"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="michael_dacanay" translatesAutoresizingMaskIntoConstraints="NO" id="hL5-OF-2FC">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="drO-Yq-GPu"/>
+                                            <constraint firstAttribute="height" constant="128" id="s2f-0Z-8tf"/>
+                                            <constraint firstAttribute="width" secondItem="hL5-OF-2FC" secondAttribute="height" multiplier="15:8" id="tjA-KG-07V"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmO-OB-Dja">
+                                        <rect key="frame" x="48.666666666666657" y="165" width="142.33333333333334" height="34.333333333333343"/>
+                                        <gestureRecognizers/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="My background"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="JFA-nA-nIq" appends="YES" id="gJB-pX-Gmc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnp-U5-D0l">
+                                        <rect key="frame" x="20.666666666666657" y="236.33333333333331" width="198.66666666666666" height="34.333333333333314"/>
+                                        <gestureRecognizers/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Where have I interned?"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="aZV-Mw-Q4D" appends="YES" id="SX2-g8-LD8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ca5-QV-T8t">
+                                        <rect key="frame" x="30.333333333333329" y="307.66666666666669" width="179.33333333333337" height="34.333333333333314"/>
+                                        <gestureRecognizers/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="What is my passion?"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="cAl-AF-qSL" appends="YES" id="gZM-Ip-bfx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="bXG-VK-R82"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="br6-Tr-QLd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="BT1-do-dzi"/>
+                            <constraint firstItem="br6-Tr-QLd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hGi-rx-mdE"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="MyStory" id="O1a-8J-w8j"/>
+                    <connections>
+                        <segue destination="i0v-Dl-7p0" kind="show" identifier="passionSegue" id="Lv1-JE-xJL"/>
+                        <segue destination="4Nq-TX-fGj" kind="show" identifier="internshipSegue" id="sRw-aa-XHp"/>
+                        <segue destination="CwJ-lU-Vvy" kind="show" identifier="backgroundSegue" id="t9K-nS-Kgi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="JFA-nA-nIq">
+                    <connections>
+                        <action selector="didTapBackground:" destination="BYZ-38-t0r" id="HJa-eb-Fgs"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="aZV-Mw-Q4D">
+                    <connections>
+                        <action selector="didTapInternship:" destination="BYZ-38-t0r" id="uWO-cT-V1h"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="cAl-AF-qSL">
+                    <connections>
+                        <action selector="didTapPassion:" destination="BYZ-38-t0r" id="IbR-P7-afu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+        </scene>
+        <!--Background-->
+        <scene sceneID="W49-4m-DmR">
+            <objects>
+                <viewController id="CwJ-lU-Vvy" customClass="BackgroundViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="atU-sG-UX1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="family_dinner" translatesAutoresizingMaskIntoConstraints="NO" id="ypp-Cx-G3E">
+                                <rect key="frame" x="76" y="168" width="240" height="158"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="My family is a big part of who I am. I'm blessed with wonderful parents and a smart, sassy sister." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tQU-Qe-KI2">
+                                <rect key="frame" x="76" y="342" width="240" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zas-t1-H8i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Background" id="GXY-va-agY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AvI-Ni-gsD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1721.3740458015266" y="-640.14084507042253"/>
+        </scene>
+        <!--Passion View Controller-->
+        <scene sceneID="HBf-E2-Ifl">
+            <objects>
+                <viewController id="i0v-Dl-7p0" customClass="PassionViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FRq-oF-06o">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="I am passionate about meeting people." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9ac-G4-nvW">
+                                <rect key="frame" x="76" y="316" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hackduke" translatesAutoresizingMaskIntoConstraints="NO" id="g38-cz-Ng5">
+                                <rect key="frame" x="76" y="180" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wsz-3n-svo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="brB-oY-6Kc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nnp-ND-on8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724.4274809160304" y="-2.1126760563380285"/>
+        </scene>
+        <!--Internship View Controller-->
+        <scene sceneID="KAL-oI-l88">
+            <objects>
+                <viewController id="4Nq-TX-fGj" customClass="InternshipViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x3R-In-oL7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tesla_cafe" translatesAutoresizingMaskIntoConstraints="NO" id="ark-o6-t5F">
+                                <rect key="frame" x="76" y="163" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="I'm currently interning at Tesla." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8rr-7F-lV3">
+                                <rect key="frame" x="76" y="299" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Ie-vU-nVS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0RV-8h-A7v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ce8-uS-0Ar" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1722" y="646"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FZX-fO-PaL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YL7-DQ-42Q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f7T-El-Dk8">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6SU-Wc-bbh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vy1-C9-Jl9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="family_dinner" width="3264" height="2448"/>
+        <image name="hackduke" width="3264" height="2448"/>
+        <image name="michael_dacanay" width="1022" height="682"/>
+        <image name="tesla_cafe" width="1706" height="1278"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
