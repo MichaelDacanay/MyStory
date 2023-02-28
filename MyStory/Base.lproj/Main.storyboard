@@ -109,9 +109,10 @@
                                             <constraint firstAttribute="height" constant="158" id="eAr-cB-uCF"/>
                                         </constraints>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="My family is a big part of who I am. I'm blessed with wonderful parents and a smart, sassy sister." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tQU-Qe-KI2">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tQU-Qe-KI2">
                                         <rect key="frame" x="0.0" y="174" width="240" height="509"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">My family is a big part of who I am. I'm blessed with wonderful parents and a smart, sassy sister. Also, my grandmother is a role model for me due to her work ethic and selflessness in serving others.</string>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -156,9 +157,10 @@
                                             <constraint firstAttribute="width" secondItem="g38-cz-Ng5" secondAttribute="height" multiplier="15:8" id="rmE-T7-AGA"/>
                                         </constraints>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="I am passionate about meeting people." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9ac-G4-nvW">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9ac-G4-nvW">
                                         <rect key="frame" x="0.0" y="136" width="240" height="547"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">I am passionate about meeting people. One extracurricular activity that I enjoy participating in is hackathons because they are events where I can build cool projects, learn new skills, meet new friends, and have an amazing time. I have been to 5+ hackathons including HackHarvard, TreeHacks, HackDuke, HackNC, and NC State's Make-a-thon and Datathon.</string>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -202,9 +204,10 @@
                                             <constraint firstAttribute="height" constant="128" id="fFh-Ll-6Kt"/>
                                         </constraints>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="I'm currently interning at Tesla." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8rr-7F-lV3">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8rr-7F-lV3">
                                         <rect key="frame" x="0.0" y="136" width="240" height="547"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">I'm currently interning at Tesla as a software engineer intern working on factory software for the Fremont Factory. Previously, I interned at Fidelity Investments for 3 consecutive summers.</string>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
