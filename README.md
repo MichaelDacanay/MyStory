@@ -4,17 +4,17 @@ Submitted by: **Michael Dacanay**
 
 **MyStory** is an app that introduces ME!
 
-Time spent: **10** hours spent in total
+Time spent: **15** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
 - [x] Users are able to see a customized app icon and launch screen
-- [ ] Your app should work for any screen size and orientation using AutoLayout constraints
-  - [ ] Mark here if you will demonstrate auto layout implementation as horizontal rotation or different phone size or both, then erase this text
-- [ ] Users are able to see at least 3 context items
-- [ ] Users are able to tap into each context item and see detail view contains information about each item (title, description, picture if applicable, etc.)
+- [x] Your app should work for any screen size and orientation using AutoLayout constraints
+  - [x] Mark here if you will demonstrate auto layout implementation as horizontal rotation or different phone size or both, then erase this text
+- [x] Users are able to see at least 3 context items
+- [x] Users are able to tap into each context item and see detail view contains information about each item (title, description, picture if applicable, etc.)
 
 The following **optional** features are implemented:
 
@@ -29,7 +29,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<!-- <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
 
 GIF created with Kap  
 

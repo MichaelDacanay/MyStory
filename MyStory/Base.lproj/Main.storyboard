@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="br6-Tr-QLd" userLabel="Main Stack View">
-                                <rect key="frame" x="76.666666666666686" y="153" width="240" height="342"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="H9a-za-0ol" userLabel="Main Stack View">
+                                <rect key="frame" x="76.666666666666686" y="153" width="240" height="252"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="michael_dacanay" translatesAutoresizingMaskIntoConstraints="NO" id="hL5-OF-2FC">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -28,7 +28,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmO-OB-Dja">
-                                        <rect key="frame" x="48.666666666666657" y="165" width="142.33333333333334" height="34.333333333333343"/>
+                                        <rect key="frame" x="48.666666666666657" y="135" width="142.33333333333334" height="34.333333333333343"/>
                                         <gestureRecognizers/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="My background"/>
@@ -37,7 +37,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnp-U5-D0l">
-                                        <rect key="frame" x="20.666666666666657" y="236.33333333333331" width="198.66666666666666" height="34.333333333333314"/>
+                                        <rect key="frame" x="20.666666666666657" y="176.33333333333331" width="198.66666666666666" height="34.333333333333343"/>
                                         <gestureRecognizers/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Where have I interned?"/>
@@ -46,7 +46,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ca5-QV-T8t">
-                                        <rect key="frame" x="30.333333333333329" y="307.66666666666669" width="179.33333333333337" height="34.333333333333314"/>
+                                        <rect key="frame" x="30.333333333333329" y="217.66666666666669" width="179.33333333333337" height="34.333333333333343"/>
                                         <gestureRecognizers/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="What is my passion?"/>
@@ -55,16 +55,13 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="bXG-VK-R82"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="br6-Tr-QLd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="BT1-do-dzi"/>
-                            <constraint firstItem="br6-Tr-QLd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hGi-rx-mdE"/>
+                            <constraint firstItem="H9a-za-0ol" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="fGU-JT-J4l"/>
+                            <constraint firstItem="H9a-za-0ol" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ll7-me-IMQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="MyStory" id="O1a-8J-w8j"/>
@@ -101,21 +98,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="family_dinner" translatesAutoresizingMaskIntoConstraints="NO" id="ypp-Cx-G3E">
-                                <rect key="frame" x="76" y="168" width="240" height="158"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="My family is a big part of who I am. I'm blessed with wonderful parents and a smart, sassy sister." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tQU-Qe-KI2">
-                                <rect key="frame" x="76" y="342" width="240" height="169"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xig-xJ-ehq">
+                                <rect key="frame" x="76.666666666666686" y="119" width="240" height="683"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="family_dinner" translatesAutoresizingMaskIntoConstraints="NO" id="ypp-Cx-G3E">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="158"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ypp-Cx-G3E" secondAttribute="height" multiplier="120:79" id="HoA-Bd-B6Y"/>
+                                            <constraint firstAttribute="width" constant="240" id="WCb-cG-MGw"/>
+                                            <constraint firstAttribute="height" constant="158" id="eAr-cB-uCF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="My family is a big part of who I am. I'm blessed with wonderful parents and a smart, sassy sister." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tQU-Qe-KI2">
+                                        <rect key="frame" x="0.0" y="174" width="240" height="509"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tQU-Qe-KI2" firstAttribute="top" secondItem="ypp-Cx-G3E" secondAttribute="bottom" constant="16" id="gSK-EK-hpR"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zas-t1-H8i"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xig-xJ-ehq" firstAttribute="top" secondItem="zas-t1-H8i" secondAttribute="top" constant="16" id="5d0-U1-JEy"/>
+                            <constraint firstItem="zas-t1-H8i" firstAttribute="bottom" secondItem="xig-xJ-ehq" secondAttribute="bottom" constant="16" id="Aki-nT-bH6"/>
+                            <constraint firstItem="xig-xJ-ehq" firstAttribute="centerX" secondItem="atU-sG-UX1" secondAttribute="centerX" id="bHG-dU-IV6"/>
+                            <constraint firstItem="xig-xJ-ehq" firstAttribute="centerX" secondItem="atU-sG-UX1" secondAttribute="centerX" id="sxR-8X-Fht"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Background" id="GXY-va-agY"/>
                 </viewController>
@@ -131,21 +145,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="I am passionate about meeting people." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9ac-G4-nvW">
-                                <rect key="frame" x="76" y="316" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hackduke" translatesAutoresizingMaskIntoConstraints="NO" id="g38-cz-Ng5">
-                                <rect key="frame" x="76" y="180" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iuN-JY-tGb">
+                                <rect key="frame" x="76.666666666666686" y="119" width="240" height="683"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hackduke" translatesAutoresizingMaskIntoConstraints="NO" id="g38-cz-Ng5">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="1SZ-rE-dKU"/>
+                                            <constraint firstAttribute="height" constant="128" id="UtH-vw-1bp"/>
+                                            <constraint firstAttribute="width" secondItem="g38-cz-Ng5" secondAttribute="height" multiplier="15:8" id="rmE-T7-AGA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="I am passionate about meeting people." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9ac-G4-nvW">
+                                        <rect key="frame" x="0.0" y="136" width="240" height="547"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9ac-G4-nvW" firstAttribute="top" secondItem="g38-cz-Ng5" secondAttribute="bottom" constant="16" id="3ND-b8-uSM"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wsz-3n-svo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iuN-JY-tGb" firstAttribute="top" secondItem="Wsz-3n-svo" secondAttribute="top" constant="16" id="4LU-3K-fNO"/>
+                            <constraint firstItem="iuN-JY-tGb" firstAttribute="centerX" secondItem="FRq-oF-06o" secondAttribute="centerX" id="YJx-9O-t46"/>
+                            <constraint firstItem="Wsz-3n-svo" firstAttribute="bottom" secondItem="iuN-JY-tGb" secondAttribute="bottom" constant="16" id="lcg-20-v3i"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="brB-oY-6Kc"/>
                 </viewController>
@@ -161,21 +191,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tesla_cafe" translatesAutoresizingMaskIntoConstraints="NO" id="ark-o6-t5F">
-                                <rect key="frame" x="76" y="163" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="I'm currently interning at Tesla." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8rr-7F-lV3">
-                                <rect key="frame" x="76" y="299" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5Fc-kR-2Us">
+                                <rect key="frame" x="76.666666666666686" y="119" width="240" height="683"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tesla" translatesAutoresizingMaskIntoConstraints="NO" id="ark-o6-t5F">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="724-rf-nxR"/>
+                                            <constraint firstAttribute="width" secondItem="ark-o6-t5F" secondAttribute="height" multiplier="15:8" id="EHM-BB-XEH"/>
+                                            <constraint firstAttribute="height" constant="128" id="fFh-Ll-6Kt"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="I'm currently interning at Tesla." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8rr-7F-lV3">
+                                        <rect key="frame" x="0.0" y="136" width="240" height="547"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8rr-7F-lV3" firstAttribute="top" secondItem="ark-o6-t5F" secondAttribute="bottom" constant="16" id="GYB-y7-M7i"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Ie-vU-nVS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Ie-vU-nVS" firstAttribute="bottom" secondItem="5Fc-kR-2Us" secondAttribute="bottom" constant="16" id="6Vt-Kq-e1x"/>
+                            <constraint firstItem="5Fc-kR-2Us" firstAttribute="top" secondItem="6Ie-vU-nVS" secondAttribute="top" constant="16" id="HYH-Mg-6yC"/>
+                            <constraint firstItem="5Fc-kR-2Us" firstAttribute="centerX" secondItem="x3R-In-oL7" secondAttribute="centerX" id="e8L-gV-2gL"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0RV-8h-A7v"/>
                 </viewController>
@@ -206,7 +252,7 @@
         <image name="family_dinner" width="3264" height="2448"/>
         <image name="hackduke" width="3264" height="2448"/>
         <image name="michael_dacanay" width="1022" height="682"/>
-        <image name="tesla_cafe" width="1706" height="1278"/>
+        <image name="tesla" width="1706" height="1278"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
